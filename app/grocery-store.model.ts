@@ -1,3 +1,5 @@
 export class GroceryStore {
-  constructor(public name: string)
+  constructor(public name: string){
+    
+  }
 }
