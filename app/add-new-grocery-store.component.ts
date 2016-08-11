@@ -10,7 +10,7 @@ import { GroceryStore } from './grocery-store.model';
         <label>Enter the name of a grocery store</label>
         <input type="text" placeholder="Please enter a grocery store name" class="col-sm-8 input-lg form-control" #newName>
       </div>
-      <button (click)="addNewGroceryStore(newName)" class="btn btn-success btn-lg add-button">Add new store</button>
+      <button (click)="addNewGroceryStore(newName)" class="btn btn-success">Add new store</button>
     </form>
   `
 })

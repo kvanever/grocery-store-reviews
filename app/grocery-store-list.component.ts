@@ -8,7 +8,9 @@ import { AddNewGroceryStore } from './add-new-grocery-store.component';
   template: `
     <add-new-grocery-store (onAddNewGroceryStore)="addNewGroceryStore($event)"></add-new-grocery-store>
     <div class="list-group">
-      <h4 class="list-group-item-heading" *ngFor="#store of groceryStoreList">{{ store.name }}</h4>
+      <div *ngFor="#store of groceryStoreList" class="list-group-item list-group-item-action">
+        <h4 class="list-group-item-heading">{{ store.name }}</h4>
+      </div>
     </div>
   `
 })
