@@ -6,10 +6,10 @@ import { AddNewGroceryStore } from './add-new-grocery-store.component';
   selector: 'grocery-store-list',
   directives: [AddNewGroceryStore],
   template: `
-    <div class="list-group">
-      <h5 class="list-group-item-heading" *ngFor="#store of groceryStoreList">{{ store.name }}</h5>
-    </div>
     <add-new-grocery-store (onAddNewGroceryStore)="addNewGroceryStore($event)"></add-new-grocery-store>
+    <div class="list-group">
+      <h4 class="list-group-item-heading" *ngFor="#store of groceryStoreList">{{ store.name }}</h4>
+    </div>
   `
 })
 export class GroceryStoreListComponent {
