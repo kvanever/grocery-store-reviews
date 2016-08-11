@@ -5,11 +5,13 @@ import { GroceryStore } from './grocery-store.model';
   selector: 'add-new-grocery-store',
   outputs: ['onAddNewGroceryStore'],
   template: `
-    <div class="grocery-store-input">
-      <label>Enter the name of a grocery store</label>
-      <input placeholder="Please enter a grocery store name" class="col-sm-8 input-lg" #newName>
-      <button (click)="addNewGroceryStore(newName)" class="btn-success btn-lg add-button">Add new store</button>
-    </div>
+    <form>
+      <div class="form-group grocery-store-input">
+        <label>Enter the name of a grocery store</label>
+        <input type="text" placeholder="Please enter a grocery store name" class="col-sm-8 input-lg form-control" #newName>
+      </div>
+      <button (click)="addNewGroceryStore(newName)" class="btn btn-success btn-lg add-button">Add new store</button>
+    </form>
   `
 })
 export class AddNewGroceryStore {
